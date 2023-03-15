@@ -27,7 +27,7 @@ function getCookie(name) {
 const app = Vue.createApp({
     data() {
         return {
-            show_notice: true,
+            show_notice: false,
             apis_json: '',
             languages: {},
             current_language: "",
