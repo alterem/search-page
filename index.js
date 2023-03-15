@@ -166,7 +166,7 @@ const app = Vue.createApp({
             console.log(true)
         }
         
-        this.apis_json = location.search
+        this.apis_json = location.search ?? '?[{"name":"Ylibrary","url":"https://api.ylibrary.org","type":"full","sensitive":false,"detail":true},{"name":"zlib.app","url":"https://worker.zlib.app","type":"full","sensitive":false,"detail":false,"download":"https://worker.zlib.app/download/"},{"name":"pdfdrive","url":"https://pdfdrive.bookpan.net","sensitive":false,"detail":false,"display":{"h":["title"],"p1":["year","pages"],"p2":["sizestring","id"],"detail":["md5"]}},{"name":"Ylibrary","url":"https://zlibrary.ylibrary.org","type":"full","sensitive":false,"detail":true},{"name":"Ylibrary","url":"https://superlib.ylibrary.org","type":"full","sensitive":false,"detail":true},{"name":"zlib.app","url":"https://api.zlib.app","type":"full","sensitive":false,"detail":false,"download":"https://d.zlib.app/download/"},{"name":"bookpan","url":"https://api.bookpan.net","type":"light","sensitive":false,"detail":true}]'
         let input = decodeURI(location.search.slice(1))
         if(input) {
             this.apis = JSON.parse(input);
