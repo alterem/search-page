@@ -201,7 +201,7 @@ const app = Vue.createApp({
 
 app.mount('#app')
 
-Sentry.init({
-    dsn: sentry_dsn,
-});
+// Sentry.init({
+//     dsn: sentry_dsn,
+// });
 
